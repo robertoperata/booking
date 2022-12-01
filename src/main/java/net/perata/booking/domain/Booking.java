@@ -4,12 +4,14 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
 import javax.persistence.SequenceGenerator;
+import javax.validation.constraints.Min;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
@@ -27,11 +29,14 @@ public class Booking {
 
     private String name;
 
-    private LocalDateTime from;
+    @Min(18)
+    private Integer age;
 
-    private LocalDateTime to;
+    private LocalDateTime bookFrom;
 
-    @ManyToMany
+    private LocalDateTime bookTo;
+
+    @ManyToMany(cascade = CascadeType.ALL)
     private List<Reference> references = new ArrayList<>();
 
 }
