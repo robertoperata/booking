@@ -33,4 +33,7 @@ public class Reference {
 
     @ManyToMany(mappedBy = "references")
     private List<Booking> bookings;
+
+    @ManyToMany
+    private List<PriceConf> priceConfs;
 }
