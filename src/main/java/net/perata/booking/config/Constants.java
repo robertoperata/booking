@@ -1,7 +1,10 @@
 package net.perata.booking.config;
 
-public interface Constants {
+public abstract class Constants {
 
-    String PROFILE_PRODUCTION = "prod";
+    public static final String PROFILE_PRODUCTION = "prod";
 
+    private Constants() {
+
+    }
 }
