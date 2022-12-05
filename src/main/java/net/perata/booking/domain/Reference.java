@@ -3,11 +3,13 @@ package net.perata.booking.domain;
 import lombok.Getter;
 import lombok.Setter;
 
+import javax.persistence.Embedded;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
+import javax.persistence.OneToMany;
 import javax.persistence.SequenceGenerator;
 import java.util.List;
 
@@ -23,6 +25,15 @@ public class Reference {
 
     private String name;
 
+    @Embedded
+    private BookingUnit unit;
+
+    @OneToMany
+    private List<PriceList> priceList;
+
     @ManyToMany(mappedBy = "references")
     private List<Booking> bookings;
+
+    @ManyToMany
+    private List<PriceConf> priceConfs;
 }
