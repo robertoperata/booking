@@ -48,5 +48,5 @@ public class PriceList {
     private BookingUnit bookingUnit;
 
     @ManyToOne
-    private Reference references;
+    private Resource references;
 }

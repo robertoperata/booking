@@ -37,6 +37,6 @@ public class Booking {
     private LocalDateTime bookTo;
 
     @ManyToMany(cascade = CascadeType.ALL)
-    private List<Reference> references = new ArrayList<>();
+    private List<Resource> resources = new ArrayList<>();
 
 }

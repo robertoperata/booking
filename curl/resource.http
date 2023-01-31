@@ -1,0 +1,9 @@
+POST localhost:8080/api/resource
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "prova",
+  "measure": "DAYS",
+  "value": 1
+}

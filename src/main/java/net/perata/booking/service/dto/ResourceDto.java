@@ -5,9 +5,11 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class ReferenceDto {
+public class ResourceDto {
 
     private Long id;
     private String name;
+    private String measure;
+    private Integer value;
 
 }

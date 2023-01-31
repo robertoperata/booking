@@ -17,6 +17,6 @@ public class BookingDto {
     private Integer age;
     private String bookFrom;
     private String bookTo;
-    private List<ReferenceDto> references = new ArrayList<>();
+    private List<ResourceDto> references = new ArrayList<>();
 
 }

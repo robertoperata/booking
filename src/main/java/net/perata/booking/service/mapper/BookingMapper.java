@@ -4,7 +4,7 @@ import net.perata.booking.domain.Booking;
 import net.perata.booking.service.dto.BookingDto;
 import org.mapstruct.Mapper;
 
-@Mapper(componentModel = "spring", uses = { ReferenceMapper.class })
+@Mapper(componentModel = "spring", uses = {ResourceMapper.class})
 public interface BookingMapper extends EntityMapper<BookingDto, Booking> {
 
 }

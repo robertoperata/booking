@@ -11,12 +11,15 @@ import javax.persistence.Id;
 import javax.persistence.ManyToMany;
 import javax.persistence.OneToMany;
 import javax.persistence.SequenceGenerator;
+import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 @Entity
 @Setter
 @Getter
-public class Reference {
+public class Resource {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "refe_seq_gen")
@@ -29,11 +32,11 @@ public class Reference {
     private BookingUnit unit;
 
     @OneToMany
-    private List<PriceList> priceList;
+    private List<PriceList> priceList = new ArrayList<>();
 
-    @ManyToMany(mappedBy = "references")
-    private List<Booking> bookings;
+    @ManyToMany(mappedBy = "resources")
+    private Set<Booking> bookings = new HashSet<>();
 
     @ManyToMany
-    private List<PriceConf> priceConfs;
+    private Set<PriceConf> priceConfigs = new HashSet<>();
 }

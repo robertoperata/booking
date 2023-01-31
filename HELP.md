@@ -9,19 +9,19 @@ The following was discovered as part of building this project:
 
 ### Reference Documentation
 
-For further reference, please consider the following sections:
+For further resource, please consider the following sections:
 
 * [Official Apache Maven documentation](https://maven.apache.org/guides/index.html)
-* [Spring Boot Maven Plugin Reference Guide](https://docs.spring.io/spring-boot/docs/2.7.4/maven-plugin/reference/html/)
-* [Create an OCI image](https://docs.spring.io/spring-boot/docs/2.7.4/maven-plugin/reference/html/#build-image)
+* [Spring Boot Maven Plugin Reference Guide](https://docs.spring.io/spring-boot/docs/2.7.4/maven-plugin/resource/html/)
+* [Create an OCI image](https://docs.spring.io/spring-boot/docs/2.7.4/maven-plugin/resource/html/#build-image)
 * [Testcontainers Postgres Module Reference Guide](https://www.testcontainers.org/modules/databases/postgres/)
-* [Spring Native Reference Guide](https://docs.spring.io/spring-native/docs/current/reference/htmlsingle/)
-* [Spring Web](https://docs.spring.io/spring-boot/docs/2.7.4/reference/htmlsingle/#web)
-* [Spring Data JPA](https://docs.spring.io/spring-boot/docs/2.7.4/reference/htmlsingle/#data.sql.jpa-and-spring-data)
-* [Spring Security](https://docs.spring.io/spring-boot/docs/2.7.4/reference/htmlsingle/#web.security)
-* [Flyway Migration](https://docs.spring.io/spring-boot/docs/2.7.4/reference/htmlsingle/#howto.data-initialization.migration-tool.flyway)
+* [Spring Native Reference Guide](https://docs.spring.io/spring-native/docs/current/resource/htmlsingle/)
+* [Spring Web](https://docs.spring.io/spring-boot/docs/2.7.4/resource/htmlsingle/#web)
+* [Spring Data JPA](https://docs.spring.io/spring-boot/docs/2.7.4/resource/htmlsingle/#data.sql.jpa-and-spring-data)
+* [Spring Security](https://docs.spring.io/spring-boot/docs/2.7.4/resource/htmlsingle/#web.security)
+* [Flyway Migration](https://docs.spring.io/spring-boot/docs/2.7.4/resource/htmlsingle/#howto.data-initialization.migration-tool.flyway)
 * [Testcontainers](https://www.testcontainers.org/)
-* [OpenFeign](https://docs.spring.io/spring-cloud-openfeign/docs/current/reference/html/)
+* [OpenFeign](https://docs.spring.io/spring-cloud-openfeign/docs/current/resource/html/)
 
 ### Guides
 
@@ -39,7 +39,7 @@ The following guides illustrate how to use some features concretely:
 
 These additional references should also help you:
 
-* [Configure the Spring AOT Plugin](https://docs.spring.io/spring-native/docs/0.12.1/reference/htmlsingle/#spring-aot-maven)
+* [Configure the Spring AOT Plugin](https://docs.spring.io/spring-native/docs/0.12.1/resource/htmlsingle/#spring-aot-maven)
 * [Declarative REST calls with Spring Cloud OpenFeign sample](https://github.com/spring-cloud-samples/feign-eureka)
 
 ## Spring Native
@@ -50,7 +50,7 @@ This project has been configured to let you generate either a lightweight contai
 
 If you're already familiar with Spring Boot container images support, this is the easiest way to get started with Spring Native.
 Docker should be installed and configured on your machine prior to creating the image,
-see [the Getting Started section of the reference guide](https://docs.spring.io/spring-native/docs/0.12.1/reference/htmlsingle/#getting-started-buildpacks).
+see [the Getting Started section of the resource guide](https://docs.spring.io/spring-native/docs/0.12.1/resource/htmlsingle/#getting-started-buildpacks).
 
 To create the image, run the following goal:
 
@@ -68,7 +68,7 @@ $ docker run --rm -p 8080:8080 Booking:0.0.1-SNAPSHOT
 
 Use this option if you want to explore more options such as running your tests in a native image.
 The GraalVM native-image compiler should be installed and configured on your machine,
-see [the Getting Started section of the reference guide](https://docs.spring.io/spring-native/docs/0.12.1/reference/htmlsingle/#getting-started-native-build-tools)
+see [the Getting Started section of the resource guide](https://docs.spring.io/spring-native/docs/0.12.1/resource/htmlsingle/#getting-started-native-build-tools)
 .
 
 To create the executable, run the following goal:
